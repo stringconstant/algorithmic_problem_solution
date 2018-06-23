@@ -27,20 +27,7 @@ def isLeapYear(year):
 
 
 def dayToWeekday(day):
-	if day % 7 == 0:
-		return 1
-	elif day % 7 == 1:
-		return 2
-	elif day % 7 == 2:
-		return 3
-	elif day % 7 == 3:
-		return 4
-	elif day % 7 == 4:
-		return 5
-	elif day % 7 == 5:
-		return 6
-	elif day % 7 == 6:
-		return 7
+	return day % 7 + 1
 
 def dayInMonth(month,year):
 	if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
